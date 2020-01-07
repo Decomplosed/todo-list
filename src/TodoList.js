@@ -9,7 +9,10 @@ class TodoList extends Component {
 
   render() {
     return (
-      <div></div>
+      <div>
+        <h1>Todo List!</h1>
+        <ul></ul>
+      </div>
     )
   }
 }
