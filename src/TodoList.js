@@ -10,10 +10,15 @@ class TodoList extends Component {
   }
 
   render() {
+    const todos = this.state.todos.map(todo => {
+      return <Todo task={todo.task} />
+    })
     return (
       <div>
         <h1>Todo List!</h1>
-        <ul></ul>
+        <ul>
+          {todos}
+        </ul>
       </div>
     )
   }
