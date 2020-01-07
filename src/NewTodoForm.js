@@ -13,6 +13,10 @@ export class NewTodoForm extends Component {
     })
   }
 
+  handleSubmit(evt) {
+    evt.preventDefault()
+  }
+
   render() {
     return (
       <div>
