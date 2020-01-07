@@ -5,6 +5,7 @@ export class NewTodoForm extends Component {
     super(props)
     this.state = { task: "" }
     this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleChange(evt) {
