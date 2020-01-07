@@ -6,6 +6,12 @@ export class NewTodoForm extends Component {
     this.state = { task: "" }
   }
 
+  handleChange(evt) {
+    this.setState({
+      [evt.target.name]: evt.target.value
+    })
+  }
+
   render() {
     return (
       <div>
