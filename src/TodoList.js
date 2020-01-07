@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Todo from './Todo'
+import NewTodoForm from './NewTodoForm'
 
 class TodoList extends Component {
   constructor(props) {
