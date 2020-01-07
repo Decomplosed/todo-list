@@ -21,6 +21,7 @@ export class NewTodoForm extends Component {
             type="text"
             placeholder="New Todo"
             id="task"
+            name="task"
             value={this.state.task}
             onChange={this.handleChange}
           />
