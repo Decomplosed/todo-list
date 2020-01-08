@@ -26,7 +26,7 @@ class Todo extends Component {
     } else {
       result = (
         <div>
-          <button>Edit</button>
+          <button onClick={this.toggleForm}>Edit</button>
           <button onClick={this.handleRemove}>X</button>
           <li>{this.props.task}</li>
         </div>
