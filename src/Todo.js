@@ -4,7 +4,8 @@ class Todo extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      isEditing: false
+      isEditing: false,
+      task: ""
     }
     this.handleRemove = this.handleRemove.bind(this)
     this.toggleForm = this.toggleForm.bind(this)
