@@ -25,7 +25,12 @@ class Todo extends Component {
       result = (
         <div>
           <form onSubmit={this.handleUpdate}>
-            <input type="text" />
+            <input
+              type="text"
+              value={this.state.task}
+              name="task"
+              onChange={this.handleChange}
+            />
             <button>Submit</button>
           </form>
         </div>
