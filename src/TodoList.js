@@ -40,6 +40,7 @@ class TodoList extends Component {
         id={todo.id}
         task={todo.task}
         removeTodo={this.remove}
+        updateTodo={this.update}
       />
     })
     return (
