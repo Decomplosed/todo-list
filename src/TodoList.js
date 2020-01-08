@@ -10,6 +10,7 @@ class TodoList extends Component {
     }
     this.create = this.create.bind(this)
     this.remove = this.remove.bind(this)
+    this.update = this.update.bind(this)
   }
 
   create(newTodo) {
