@@ -12,7 +12,6 @@ class Todo extends Component {
     this.toggleForm = this.toggleForm.bind(this)
     this.handleChange = this.handleChange.bind(this)
     this.handleUpdate = this.handleUpdate.bind(this)
-    this.toggleCompletion = this.toggleCompletion.bind(this)
     this.handleToggle = this.handleToggle.bind(this)
   }
 
@@ -38,16 +37,6 @@ class Todo extends Component {
 
   toggleForm() {
     this.setState({ isEditing: !this.state.isEditing })
-  }
-
-  toggleCompletion(id) {
-    const updatedTodos = this.state.todos.map(todo => {
-      if (todo.id === id) {
-        return { ...todo, completed: !todo.completed }
-      }
-      return todo
-    })
-    this.setState({ todos: updatedTodos })
   }
 
   render() {
