@@ -9,6 +9,7 @@ class Todo extends Component {
     }
     this.handleRemove = this.handleRemove.bind(this)
     this.toggleForm = this.toggleForm.bind(this)
+    this.handleChange = this.handleChange.bind(this)
   }
 
   handleRemove() {
