@@ -43,7 +43,7 @@ class Todo extends Component {
               name="task"
               onChange={this.handleChange}
             />
-            <button>Submit</button>
+            <button>Save</button>
           </form>
         </div>
       )
