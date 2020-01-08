@@ -15,6 +15,12 @@ class TodoList extends Component {
     this.setState({ todos: [...this.state.todos, newTodo] })
   }
 
+  remove(id) {
+    this.setState({
+      todos: this.state.todos.filter(t => t.id !== id)
+    })
+  }
+
   render() {
     const todos = this.state.todos.map(todo => {
       return <Todo key={todo.id} task={todo.task} />
