@@ -14,13 +14,25 @@ class Todo extends Component {
   }
 
   render() {
-    return (
-      <div>
-        <button>Edit</button>
-        <button onClick={this.handleRemove}>X</button>
-        <li>{this.props.task}</li>
-      </div>
-    )
+    let result
+    if (this.state.isEditing) {
+      result = (
+        <div>
+          <form>
+            <input type="text" />
+          </form>
+        </div>
+      )
+    } else {
+      result = (
+        <div>
+          <button>Edit</button>
+          <button onClick={this.handleRemove}>X</button>
+          <li>{this.props.task}</li>
+        </div>
+      )
+    }
+    return result
   }
 }
 
