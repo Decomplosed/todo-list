@@ -9,6 +9,7 @@ class TodoList extends Component {
       todos: []
     }
     this.create = this.create.bind(this)
+    this.remove = this.remove.bind(this)
   }
 
   create(newTodo) {
