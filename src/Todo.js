@@ -7,6 +7,7 @@ class Todo extends Component {
       isEditing: false
     }
     this.handleRemove = this.handleRemove.bind(this)
+    this.toggleForm = this.toggleForm.bind(this)
   }
 
   handleRemove() {
