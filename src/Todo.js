@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 class Todo extends Component {
   constructor(props) {
     super(props)
+    this.handleRemove = this.handleRemove.bind(this)
   }
 
   handleRemove() {
