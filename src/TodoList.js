@@ -29,6 +29,7 @@ class TodoList extends Component {
       }
       return todo
     })
+    this.setState({ todos: updatedTodos })
   }
 
   render() {
