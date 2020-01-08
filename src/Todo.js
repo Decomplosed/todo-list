@@ -13,6 +13,10 @@ class Todo extends Component {
     this.props.removeTodo(this.props.id)
   }
 
+  toggleForm() {
+    this.setState({ isEditing: !this.state.isEditing })
+  }
+
   render() {
     let result
     if (this.state.isEditing) {
